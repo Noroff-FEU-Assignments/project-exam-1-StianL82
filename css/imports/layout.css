@@ -325,6 +325,6 @@ textarea {
   white-space: nowrap;
 }
 
-.visually-hidden-h2{
+.visually-hidden-h1, .visually-hidden-h2{
   color: var(--color-black);
 }
