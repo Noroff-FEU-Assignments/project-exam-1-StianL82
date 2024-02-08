@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="If you have any feedback, suggestions or anything else you want to say, please feel free to contact me."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Black+Ops+One&family=Sarabun&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/header-logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="/js/index.js"></script>
+    <title>Games and Spices | Contact Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="header-section">
+          <input type="checkbox" id="menu-checkbox" />
+          <label for="menu-checkbox" class="hamburger-icon"
+            ><img
+              src="images/Icons/Hamburger-icon.png"
+              alt="Hamburger-menu icon"
+          /></label>
+          <figure class="hidden-logo">
+            <img
+              src="images/header-logo_small.png"
+              alt="Logo for Games and Spices blog"
+            />
+          </figure>
+          <nav class="header-nav">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="blogspage.html">BLOGS</a></li>
+            </ul>
+            <figure class="header-logo">
+              <img
+                src="images/header-logo.png"
+                alt="Logo for Games and Spices blog"
+              />
+            </figure>
+            <ul>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html" id="active">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="hero-image contact-hero">
+        <h1 class="hero-text">Contact</h1>
+      </div>
+
+      <div class="wrapper">
+        <figure class="contact_image_container">
+          <img
+            src="images/contact/man3.png"
+            alt="Picture of a man holding a gaming joystick surrounded by spices, food and chili"
+          />
+          <figcaption>
+            <h2>Thank you for visiting my blog.</h2>
+          </figcaption>
+        </figure>
+        <figure class="divider divider-2">
+          <img
+            src="images/contact/divider_3.png"
+            alt="Divider for the home page with a image of a gaming joystick and a bowl of chili"
+          />
+        </figure>
+      </div>
+      <section id="contact">
+        <div class="wrapper">
+          <h2>Please contact me if you have any questions or feedback</h2>
+          <div class="container_blue column-block">
+            <form method="GET">
+              <div class="contact-form">
+                <div class="fieldset">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-input"
+                    placeholder="Ola Nordmann"
+                    required
+                  />
+                  <div class="form-error" id="nameError">
+                    Please enter a valid name. More than 5 characters long
+                  </div>
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input"
+                    placeholder="test@mail.com"
+                    required
+                  />
+                  <div class="form-error" id="emailError">
+                    Please enter a valid email address
+                  </div>
+                  <label for="subject">Subject</label>
+                  <input
+                    type="tel"
+                    name="subject"
+                    id="subject"
+                    class="form-input"
+                    required
+                  />
+                  <div class="form-error" id="subjectError">
+                    Subject should be more than 15 characters long
+                  </div>
+                  <label for="message">Write us a message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    cols="30"
+                    rows="10"
+                    class="form-input"
+                  ></textarea>
+                  <div class="form-error" id="messageError">
+                    Message should be more than 25 characters long
+                  </div>
+                </div>
+              </div>
+              <div class="button form-cta">
+                <input type="submit" value="Submit" class="cta" />
+              </div>
+            </form>
+          </div>
+          <figure class="back-to-top-button imagehover">
+            <a href="#back-to-top">
+              <img
+                src="images/Back to the top Button.png"
+                alt="Back to the top button"
+              />
+            </a>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <section class="footer-content">
+          <div class="contact-info">
+            <a href="about.html" class="footer-contact-link">
+              <h2>ABOUT</h2>
+            </a>
+            <a href="contact.html" class="footer-contact-link">
+              <h2>CONTACT</h2>
+            </a>
+          </div>
+          <div class="footer-logo">
+            <a href="index.html">
+              <img
+                src="images/footer-logo.png"
+                alt="Logo for Games and Spices blog"
+              />
+            </a>
+          </div>
+          <div class="social-icons">
+            <img src="images/icons/facebook-icon.png" alt="Facebook Icon" />
+            <img src="images/icons/instagram-icon.png" alt="Instagram Icon" />
+            <img src="images/icons/youtube-icon.png" alt="Youtube Icon" />
+          </div>
+        </section>
+        <p class="copyright">©PE1 SL24</p>
+      </div>
+    </footer>
+  </body>
+</html>

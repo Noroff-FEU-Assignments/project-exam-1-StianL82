@@ -1,0 +1,56 @@
+export let currentSortOption = 'latest'; 
+
+export function SortFunctionality(sortOptionsSelector, postsContainerSelector, loadBlogPostsCallback) {
+    const sortOptions = document.querySelector(sortOptionsSelector);
+    const sortTextElement = document.querySelector(".sort-text");
+
+    const savedSortOption = sessionStorage.getItem('currentSortOption');
+    if (savedSortOption && sortOptions) {
+        currentSortOption = savedSortOption;
+        sortOptions.value = savedSortOption;
+
+        const selectedOptionText = sortOptions.options[sortOptions.selectedIndex].text;
+        if (sortTextElement) {
+            sortTextElement.textContent = selectedOptionText;
+        }
+    }
+
+    if (sortOptions) {
+    sortOptions.addEventListener("change", () => handleSortChange(sortOptions, postsContainerSelector, loadBlogPostsCallback));
+    }
+}
+
+function handleSortChange(sortOptions, postsContainerSelector, loadBlogPostsCallback) {
+    currentSortOption = sortOptions.value;
+    sessionStorage.setItem('currentSortOption', currentSortOption);
+
+  // Update sort-text h2
+    const sortTextElement = document.querySelector(".sort-text");
+    if (sortTextElement) {
+        const selectedOptionText = sortOptions.options[sortOptions.selectedIndex].text;
+        sortTextElement.textContent = selectedOptionText;
+    }
+
+    const postsContainer = document.querySelector(postsContainerSelector);
+    postsContainer.innerHTML = '';
+    loadBlogPostsCallback();
+}
+
+export function sortPosts(posts) {
+    return posts.sort((a, b) => {
+        switch (currentSortOption) {
+            case 'latest':
+                return new Date(b.date) - new Date(a.date);
+            case 'oldest':
+                return new Date(a.date) - new Date(b.date);
+            case 'alpha-asc':
+                return a.title.rendered.localeCompare(b.title.rendered, 'nb');
+            case 'alpha-desc':
+                return b.title.rendered.localeCompare(a.title.rendered, 'nb');
+            default:
+                return 0;
+        }
+    });
+}
+
+

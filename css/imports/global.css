@@ -1,0 +1,61 @@
+/*---------- variants ----------*/
+
+:root {
+  --color-site-background: #000E16;
+  --color-light-blue: #9FBEC8;
+  --color-button-red: #F21B07;
+  --color-light-grey: #E3DDDD;
+  --color-header-footer: #A61F38;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-site-background: #000E16;
+  --border: 1px solid ;
+  --text-h1: 'Black Ops One', Arial, Helvetica, sans-serif;
+  --text-h2: 'Barlow Condensed', sans-serif;
+  --text-p-and-span: 'Sarabun', Arial, Helvetica, sans-serif;
+}
+
+
+/*---------- html/Body ----------*/
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 140px;
+}
+
+Body{
+  background-color: var(--color-site-background);
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+/*---------- Typography ----------*/
+
+h1 {
+  font-size: clamp(36px, 4vw, 58px);
+  font-family: var(--text-h1);
+  text-align: center;
+}
+h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-family: var(--text-h2);
+  color: var(--color-white);
+}
+h3 {
+  font-size: clamp(28px, 3vw, 36px);
+  font-family: var(--text-h2);
+  color: var(--color-white);
+}
+p, span {
+  font-size: clamp(16px, 2vw, 24px);
+  font-family: var(--text-p-and-span);
+}
+
+.hero-text {
+  color: var(--color-white);
+}
