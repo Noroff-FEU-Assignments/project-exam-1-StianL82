@@ -324,3 +324,7 @@ textarea {
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
 }
+
+.visually-hidden-h2{
+  counter-reset: var(--color-black);
+}
