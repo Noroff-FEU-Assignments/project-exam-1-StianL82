@@ -312,3 +312,14 @@ textarea {
 #contact h2{
   padding: 40px;
 }
+
+
+/*---------- Hidden ----------*/
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* Legger til for å sikre at teksten ikke brytes i flere linjer */
+}
