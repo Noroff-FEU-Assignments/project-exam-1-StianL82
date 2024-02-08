@@ -326,5 +326,5 @@ textarea {
 }
 
 .visually-hidden-h2{
-  counter-reset: var(--color-black);
+  color: var(--color-black);
 }
