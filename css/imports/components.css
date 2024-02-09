@@ -204,7 +204,8 @@
 .footer-logo img:hover,
 .contact-info a:hover,
 .header-nav li:hover,
-#backToLastPage img:hover{
+#backToLastPage img:hover,
+.social-icons img:hover{
   transform: scale(1.1);
 }
 
