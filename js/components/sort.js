@@ -24,7 +24,6 @@ function handleSortChange(sortOptions, postsContainerSelector, loadBlogPostsCall
     currentSortOption = sortOptions.value;
     sessionStorage.setItem('currentSortOption', currentSortOption);
 
-  // Update sort-text h2
     const sortTextElement = document.querySelector(".sort-text");
     if (sortTextElement) {
         const selectedOptionText = sortOptions.options[sortOptions.selectedIndex].text;
@@ -32,9 +31,14 @@ function handleSortChange(sortOptions, postsContainerSelector, loadBlogPostsCall
     }
 
     const postsContainer = document.querySelector(postsContainerSelector);
+    if (!postsContainer) {
+        console.error('postsContainer is null. Cannot update posts.');
+        return; // Avslutter funksjonen tidlig hvis postsContainer er null
+    }
     postsContainer.innerHTML = '';
-    loadBlogPostsCallback();
+    loadBlogPostsCallback(); // Forsikre deg om at denne funksjonen også håndterer null-sjekker eller re-initialiserer postsContainer korrekt.
 }
+
 
 export function sortPosts(posts) {
     return posts.sort((a, b) => {
