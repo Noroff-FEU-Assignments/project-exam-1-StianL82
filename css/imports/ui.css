@@ -125,7 +125,7 @@ footer {
   justify-content: right;
 }
 
-.contact-info h2, .has-text-align-center {
+.contact-info h2, .has-text-align-center, .contact-h2 {
   text-align: center;
 }
 
