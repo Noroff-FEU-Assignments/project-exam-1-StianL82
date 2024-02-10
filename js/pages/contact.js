@@ -8,8 +8,15 @@ function setupFormValidation() {
   const form = document.querySelector('form');
 
   form.addEventListener('submit', function (event) {
-    if (!validateForm()) {
-      event.preventDefault();
+    event.preventDefault();
+    if (validateForm()) {
+      document.getElementById('customAlert').style.display = 'block';
+
+      form.reset();
+
+      setTimeout(function() {
+          document.getElementById('customAlert').style.display = 'none';
+      }, 3000);
     }
   });
 
