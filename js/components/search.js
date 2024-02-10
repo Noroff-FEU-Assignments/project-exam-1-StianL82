@@ -1,6 +1,6 @@
 import { fetchApiCall } from '../api/index.js';
 import * as utils from "../utils/index.js";
-
+import { sortPosts } from './sort.js';
 
 export async function setupSearch() {
   const searchInput = document.getElementById('search-input');
@@ -18,24 +18,18 @@ export async function setupSearch() {
     const searchText = searchInput.value.trim();
 
     if (searchText.length === 0) {
-      displayPosts(originalPosts, postsContainer);
+        window.location.reload();
     } else {
-      searchPosts(searchText, postsContainer);
+        searchPosts(searchText, postsContainer);
     }
-  });
-
-  searchInput.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-      searchInput.value = '';
-      displayPosts(originalPosts, postsContainer);
-    }
-  });
+});
 }
 
 async function searchPosts(searchText, postsContainer) {
   try {
     const posts = await fetchApiCall(1, 100, `&search=${encodeURIComponent(searchText)}`);
-    displayPosts(posts, postsContainer);
+    const sortedPosts = sortPosts(posts);
+    displayPosts(sortedPosts, postsContainer);
   } catch (error) {
     console.error("Error fetching search results:", error);
   }
@@ -66,6 +60,3 @@ function displayPosts(posts, postsContainer) {
 
   postsContainer.innerHTML = postsHtml;
 }
-
-
-
