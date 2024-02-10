@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 400px;
+  min-height: 250px;
   position: relative;
   text-align: center;
   margin-bottom: 40px;
@@ -85,7 +85,8 @@
 }
 
 .contact_image_container img{
-  max-width: 400px;
+  max-width: 240px;
+  margin-top: 20px;
 }
 
 
@@ -281,6 +282,35 @@ select {
 
 textarea {
   height: 75%;
+}
+
+
+.form-wrapper{
+  padding-top: 60px;
+}
+
+.custom-alert {
+  display: none;
+  background-color: var(--color-light-grey);
+  border: 2px solid var(--color-site-background);
+  padding: 30px;
+  border-radius: 10px;
+  font-family: var(--text-h2);
+  font-size: 28px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.alert-image {
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 10px;
+  width: 240px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 
