@@ -136,6 +136,7 @@
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 60px;
+  box-shadow: 3px 5px 8px var(--color-header-footer);
 }
 
 .container_blue{
@@ -260,14 +261,15 @@
 .form-input {
   display: flex;
   flex-direction: column;
-  margin: 0px 10px 20px 0px;
+  margin-bottom: 20px;
   padding: 10px;
   align-self: center;
 }
 
 .fieldset label {
-  align-self: center;
-  font-family: var(--text-h3)
+  margin-left: 11%;
+  font-family: var(--text-h2);
+  font-size: clamp(20px, 2vw, 24px);
 }
 
 input, textarea, select{
