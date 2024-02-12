@@ -147,7 +147,7 @@ color: var(--color-header-footer);
 /*---------- MOBILE ----------*/
 @media (max-width: 600px) {
 
-.welcome-text h2 {
+.welcome-text h2, .blogpost-date {
   text-align: center;
 }
 
