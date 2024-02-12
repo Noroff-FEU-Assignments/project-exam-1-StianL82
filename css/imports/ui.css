@@ -19,6 +19,7 @@ header {
 .header-nav {
   display: flex;
   justify-content: center;
+  height: 90px;
 }
 
 .header-nav a{
@@ -49,9 +50,8 @@ header {
 }
 
 .header-logo img{
-  max-width: clamp(150px, 25vw, 300px);
   padding: 10px;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 
