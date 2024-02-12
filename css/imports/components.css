@@ -152,6 +152,7 @@
   overflow: hidden;
   max-width: 200px;
   margin: 0 auto;
+  box-shadow: 1px 1px 4px var(--color-black);
 }
 
 .carousel-card-image img {
