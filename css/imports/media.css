@@ -58,6 +58,7 @@ header {
   left: -1px;
   border: var(--border);
   flex-direction: column;
+  height: auto;
 }
 
 .header-section {
