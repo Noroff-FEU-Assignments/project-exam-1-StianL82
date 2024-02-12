@@ -40,6 +40,12 @@ function displayPosts() {
     const postsHtml = postsToShow.map(post => {
         const firstH3 = utils.getFirstH3Content(post.content.rendered);
         const firstImageSrc = utils.getFirstImageSrc(post.content.rendered);
+        const pubDate = new Date(post.date).toLocaleDateString('nb-NO', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
         return `
         <figure class="blogpost">
             <figcaption class="blogpost_heading_small">
@@ -49,11 +55,12 @@ function displayPosts() {
             <figcaption class="textfield-grey">
                 <h2 class="blogpost_heading_big">${post.title.rendered}</h2>
                 <h3>${firstH3 || 'Standard H3 Innhold'}</h3>
+                <p class="blogpost-date">Published: ${pubDate}</p>
                 <div class="button">
                     <a href="blogpost.html?id=${post.id}" class="cta grey-cta">Read more</a>
                 </div>
-            </figcaption>
-        </figure>
+                </figcaption>
+                </figure>
         `;
     }).join('');
 
