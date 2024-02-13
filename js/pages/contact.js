@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   components.enableScrollToTop();
 });
 
+
 function setupFormValidation() {
   const form = document.querySelector('form');
 
@@ -32,6 +33,7 @@ function setupFormValidation() {
   });
 }
 
+
 function validateForm() {
   let isValid = true;
 
@@ -42,6 +44,7 @@ function validateForm() {
 
   return isValid;
 }
+
 
 function validateField(fieldId) {
   const fieldValue = document.getElementById(fieldId).value;
@@ -77,6 +80,7 @@ function validateField(fieldId) {
 
   return isValid;
 }
+
 
 function hideErrorMessage(errorId) {
   const errorElement = document.getElementById(errorId);
