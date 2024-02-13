@@ -81,15 +81,37 @@ export function displayPosts() {
   });
 }
 
+function updateNavigationButtons() {
+  const leftButton = document.querySelector('.carousel-left-button');
+  const rightButton = document.querySelector('.carousel-right-button');
+
+  if (currentStartIndex - numberOfPostsToShow >= 0) {
+    leftButton.classList.add('button-active');
+    leftButton.classList.remove('button-inactive');
+  } else {
+    leftButton.classList.remove('button-active');
+    leftButton.classList.add('button-inactive');
+  }
+
+  if (currentStartIndex + numberOfPostsToShow < posts.length) {
+    rightButton.classList.add('button-active');
+    rightButton.classList.remove('button-inactive');
+  } else {
+    rightButton.classList.remove('button-active');
+    rightButton.classList.add('button-inactive');
+  }
+}
+
 
 export function setupNavigation() {
-  const leftButton = document.querySelector('.carousel-full button:first-child');
-  const rightButton = document.querySelector('.carousel-full button:last-child');
+  const leftButton = document.querySelector('.carousel-left-button');
+  const rightButton = document.querySelector('.carousel-right-button');
 
   leftButton.addEventListener('click', () => {
     if (currentStartIndex - numberOfPostsToShow >= 0) {
       currentStartIndex -= numberOfPostsToShow;
       displayPosts();
+      updateNavigationButtons();
     }
   });
 
@@ -97,6 +119,7 @@ export function setupNavigation() {
     if (currentStartIndex + numberOfPostsToShow < posts.length) {
       currentStartIndex += numberOfPostsToShow;
       displayPosts();
+      updateNavigationButtons();
     }
   });
 }
@@ -107,5 +130,6 @@ export function homePage() {
     adjustPostsToShow();
     setupNavigation();
     components.enableScrollToTop();
+    updateNavigationButtons();
   });
 }
