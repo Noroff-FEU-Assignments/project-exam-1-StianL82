@@ -33,10 +33,10 @@ function handleSortChange(sortOptions, postsContainerSelector, loadBlogPostsCall
     const postsContainer = document.querySelector(postsContainerSelector);
     if (!postsContainer) {
         console.error('postsContainer is null. Cannot update posts.');
-        return; // Avslutter funksjonen tidlig hvis postsContainer er null
+        return;
     }
     postsContainer.innerHTML = '';
-    loadBlogPostsCallback(); // Forsikre deg om at denne funksjonen også håndterer null-sjekker eller re-initialiserer postsContainer korrekt.
+    loadBlogPostsCallback();
 }
 
 
