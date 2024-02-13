@@ -182,7 +182,6 @@
   height: 150px;
   align-items: center;
   align-self: center;
-  cursor: pointer;
 }
 
 .carousel-left-button{
@@ -202,6 +201,15 @@
 .blogpost:hover, 
 .carousel-card:hover{
   transform: scale(1.02);
+}
+
+.button-active {
+  cursor: pointer;
+}
+
+.button-inactive {
+  background-color: var(--color-light-blue);
+  cursor: default;
 }
 
 .footer-logo img:hover,
