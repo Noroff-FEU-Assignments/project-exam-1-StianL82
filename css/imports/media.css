@@ -111,6 +111,7 @@ header {
 color: var(--color-header-footer);
 }
 
+
 /*---------- Footer ----------*/
 
 .footer-content {  
@@ -130,6 +131,7 @@ color: var(--color-header-footer);
 .social-icons{
   order: 3;
 }
+
 
 /*---------- Carousel ----------*/
 
@@ -198,12 +200,14 @@ color: var(--color-header-footer);
   margin: 0px 20px;
 }
 
+
 /*---------- BlogPost Page ----------*/
 
 .wp-block-gallery{
   flex-direction: column;
 }
 }
+
 
 /*---------- EXTRA CAROUSEL SETTING ----------*/
 
