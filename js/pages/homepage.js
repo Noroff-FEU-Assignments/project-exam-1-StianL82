@@ -41,6 +41,7 @@ async function fetchPosts() {
   }
 }
 
+
 export function displayPosts() {
   const carouselContainer = document.querySelector('.carousel-container');
 
@@ -80,6 +81,7 @@ export function displayPosts() {
     carouselContainer.appendChild(card);
   });
 }
+
 
 function updateNavigationButtons() {
   const leftButton = document.querySelector('.carousel-left-button');
