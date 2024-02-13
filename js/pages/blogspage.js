@@ -40,7 +40,7 @@ function displayPosts() {
     const postsHtml = postsToShow.map(post => {
         const firstH3 = utils.getFirstH3Content(post.content.rendered);
         const firstImageSrc = utils.getFirstImageSrc(post.content.rendered);
-        const pubDate = new Date(post.date).toLocaleDateString('nb-NO', {
+        const pubDate = new Date(post.date).toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
             day: 'numeric'
