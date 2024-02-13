@@ -47,7 +47,7 @@
 }
 
 .home-content{
-  background-image: url('/images/main/home_content_background.png');
+  background-image: url('/images/main/home_content_background.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -77,7 +77,7 @@
 }
 
 #contact{
-  background-image: url('/images/contact/back-contact_form.png');
+  background-image: url('/images/contact/back-contact_form.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
