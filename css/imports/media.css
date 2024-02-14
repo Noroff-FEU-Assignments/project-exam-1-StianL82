@@ -58,7 +58,7 @@ header {
   left: -1px;
   border: var(--border);
   flex-direction: column;
-  height: auto;
+  height: calc(100vh - 82.5px);
   overflow-y: auto;
 }
 
