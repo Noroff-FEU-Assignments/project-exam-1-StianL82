@@ -255,19 +255,33 @@
 /*---------- Divider ----------*/
 
 .divider {
-  margin: 20px;
-  display: flex;
-  justify-content: center;
+  width: 90%;
+  height: clamp(75px, 15vw, 125px);
+  background-image: url('/images/main/divider1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.divider-1{
+  background-image: url('/images/main/divider1.png');
+}
+
+.divider-2{
+  background-image: url('/images/about/divider2.png');
+}
+
+.divider-3{
+  background-image: url('/images/contact/divider_3.png');
+  margin-top: 40px;
 }
 
 .divider img{
   padding: 5px 0px;
   max-width: 100%;
   margin: 20px;
-}
-
-.divider-1 img{
-  margin-top: -66px;
 }
 
 
