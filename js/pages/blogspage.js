@@ -57,7 +57,7 @@ function displayPosts() {
                 <h3>${firstH3 || 'Standard H3 Innhold'}</h3>
                 <p class="blogpost-date">Published: ${pubDate}</p>
                 <div class="button">
-                    <a href="blogpost.html?id=${post.id}" class="cta grey-cta">Read more</a>
+                    <a href="blogpost.html?id=${post.id}" class="cta grey-cta">Read more...</a>
                 </div>
                 </figcaption>
                 </figure>
