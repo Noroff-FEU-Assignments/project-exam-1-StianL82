@@ -59,6 +59,7 @@ header {
   border: var(--border);
   flex-direction: column;
   height: auto;
+  overflow-y: auto;
 }
 
 .header-section {
