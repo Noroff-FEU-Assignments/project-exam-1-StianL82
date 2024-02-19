@@ -13,7 +13,7 @@ This page was our exam assignment 1. The task was to build a fictional and respo
 - HTML
 - CSS
 - JavaScript
-- Wordpress API
+- Wordpress
 
 ## Getting Started
 
