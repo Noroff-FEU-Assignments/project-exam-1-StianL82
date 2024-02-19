@@ -1,4 +1,6 @@
-# GAMES AND SPICES
+# Projekt Exam 1
+
+## GAMES AND SPICES
 
 ![image](/images/readme/screencapture-pe1-stianl-netlify-app-2024-02-19-14_46_59-500-min.png)
 
