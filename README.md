@@ -1,7 +1,5 @@
 # Project Exam 1
 
-![image](/images/header-logo.png)
-
 ## Games and Spices 🕹️ 🌶️
 
 ![image](/images/readme/screencapture-pe1-stianl-netlify-app-2024-02-19-14_46_59-500-min.png)
@@ -10,7 +8,7 @@ A fictional blog about games and spices. Whats not to like 😄
 
 ## Visit the page at:
 
-https://pe1-stianl.netlify.app/
+[![Games and Spices](/images/header-logo.png)](https://pe1-stianl.netlify.app/)
 
 ## Description
 
