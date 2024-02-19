@@ -1,6 +1,6 @@
 # GAMES AND SPICES
 
-![image](/images/readme/screencapture-pe1-stianl-netlify-app-2024-02-19-14_46_59-400%201-min.png)
+![image](/images/readme/screencapture-pe1-stianl-netlify-app-2024-02-19-14_46_59-500-min.png)
 
 A fictional blog about games and spices. Whats not to like 😄
 
