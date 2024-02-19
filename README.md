@@ -6,6 +6,9 @@
 
 A fictional blog about games and spices. Whats not to like 😄
 
+## Visit the page at:
+https://pe1-stianl.netlify.app/
+
 ## Description
 
 This page was our exam assignment 1. The task was to build a fictional and responsive webpage with blog posts from Wordpress that were fetched from a Wordpress API, using the tools we have learned in our studies so far. We had 5 weeks to complete the project.
