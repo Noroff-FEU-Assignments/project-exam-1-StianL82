@@ -2,7 +2,7 @@
 
 ![image](/images/header-logo.png)
 
-## Games and Spices
+## Games and Spices 🕹️ 🌶️
 
 ![image](/images/readme/screencapture-pe1-stianl-netlify-app-2024-02-19-14_46_59-500-min.png)
 
