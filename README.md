@@ -7,7 +7,10 @@
 A fictional blog about games and spices. Whats not to like 😄
 
 ## Visit the page at:
+
 https://pe1-stianl.netlify.app/
+
+![image](/images/header-logo.png)
 
 ## Description
 
