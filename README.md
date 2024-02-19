@@ -23,7 +23,7 @@ This page was our exam assignment 1. The task was to build a fictional and respo
 Clone the repo:
 
 ```
-git clone git@github.com:Noroff-FEU-Assignments/project-exam-1-StianL82.git
+git clone git@github.com/Noroff-FEU-Assignments/project-exam-1-StianL82.git
 ```
 
 ### Running
