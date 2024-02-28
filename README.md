@@ -36,6 +36,9 @@ git clone git@github.com/Noroff-FEU-Assignments/project-exam-1-StianL82.git
 
 Open with live server, or open in browser [Link to page](https://pe1-stianl.netlify.app/).
 
+### Contributing
+This repo is not open to any contributions. 
+
 ## Contact 📫
 
 Feel free to contact me at stian.lilleng@gmail.com
